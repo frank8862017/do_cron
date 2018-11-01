@@ -6,3 +6,4 @@ sqlalchemy==1.1.14
 requests
 redis==2.10.6
 fire
+apscheduler
