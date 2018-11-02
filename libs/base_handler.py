@@ -28,11 +28,11 @@ class BaseHandler(SDKBaseHandler):
         self.set_cookie('csrf_key', self.new_csrf_key)
 
         ### 登陆验证
-        auth_key = self.get_cookie('auth_key', None)
-
-        if not auth_key or not self.get_secure_cookie("user_id"):
-            # 没登录，就让跳到登陆页面
-            raise HTTPError(401, 'auth failed')
+        # auth_key = self.get_cookie('auth_key', None)
+        #
+        # if not auth_key or not self.get_secure_cookie("user_id"):
+        #     # 没登录，就让跳到登陆页面
+        #     raise HTTPError(401, 'auth failed')
 
 
     def get_current_user(self):
